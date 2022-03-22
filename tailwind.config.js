@@ -1,6 +1,14 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    extend: {
+      color: {
+        theme: "#212024",
+      },
+      fontFamily: {
+        mont: ["Montserrat", "sans-serif"],
+      },
+    },
     screens: {
       "2xl": { max: "1535px" },
       // => @media (max-width: 1535px) { ... }
