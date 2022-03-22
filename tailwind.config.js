@@ -2,8 +2,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      color: {
-        theme: "#212024",
+      colors: {
+        github: "#0C1116",
       },
       fontFamily: {
         mont: ["Montserrat", "sans-serif"],
