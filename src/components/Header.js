@@ -27,14 +27,14 @@ const Header = () => {
   const pathname = window.location.pathname;
 
   return (
-    <div className="text-white font-mont">
+    <div className="text-white font-mont fixed inset-0 z-50">
       <div
         className={`flex bg-github justify-between items-center p-2 font-semibold shadow-lg ${
           showMenu === "" && "md:flex-col"
         }`}
       >
         <div className="flex justify-between w-full items-center">
-          <h1 className="text-4xl">BILLY ENDRES</h1>
+          <h1 className="text-4xl">B.E</h1>
 
           <FaBars
             onClick={() => {
