@@ -6,12 +6,10 @@ const Home = () => {
   return (
     <Layout>
       <div>
-        <div className="min-h-screen bg-github">
+        <div className="min-h-screen bg-github flex justify-center">
           <div className="grid md:grid-cols-1 grid-cols-2 h-screen items-center border-4 border-white transform rotate-12 md:rotate-0 md:border-0 mx-20 sm:mx-0 bg-github">
-            <div className="h-1/3">
-              <img className="px-5" src={profileImg} alt={profileImg} />
-            </div>
-            <div className="font-bold text-white md:px-5">
+            <img className="px-5 md:-mb-24" src={profileImg} alt={profileImg} />
+            <div className="font-bold text-white md:px-5 md:h-full">
               <h1 className="text-7xl  md:text-4xl">
                 Hi, I'm <b className="text-yellow-500">BILLY</b>
               </h1>

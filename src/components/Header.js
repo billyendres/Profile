@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
+import w3s from "../images/w3s.png";
 
 const menuItems = [
   {
@@ -34,7 +35,7 @@ const Header = () => {
         }`}
       >
         <div className="flex justify-between w-full items-center">
-          <h1 className="text-4xl">B.E</h1>
+          <img src={w3s} alt={w3s} />
 
           <FaBars
             onClick={() => {
