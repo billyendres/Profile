@@ -28,15 +28,17 @@ const Header = () => {
   const pathname = window.location.pathname;
 
   return (
-    <div className="text-white font-mont fixed inset-0 z-50">
+    <div className="text-white font-orbit tracking-widest fixed top-0 left-0 right-0 z-50">
       <div
-        className={`flex bg-github justify-between items-center p-2 font-semibold shadow-lg ${
+        className={`flex bg-github justify-between items-center p-6 font-semibold shadow-lg ${
           showMenu === "" && "md:flex-col"
         }`}
       >
         <div className="flex justify-between w-full items-center">
-          <img src={w3s} alt={w3s} />
-
+          <h1 className="text-4xl tracking-widest">
+            <span className="text-cyan-400">B</span>.
+            <span className="text-pink-400">E</span>
+          </h1>
           <FaBars
             onClick={() => {
               showMenu === "md:hidden"
