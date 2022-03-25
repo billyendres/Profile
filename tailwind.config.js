@@ -3,7 +3,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        github: "#0C1116",
+        lightOrange: "#ff5145",
+        lightBlue: "#1efcaf",
+        lightGreen: "#CCFFC8",
+        github: "#000000",
       },
       fontFamily: {
         mont: ["Montserrat", "sans-serif"],

@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
-import w3s from "../images/w3s.png";
 
 const menuItems = [
   {
@@ -30,15 +29,17 @@ const Header = () => {
   return (
     <div className="text-white font-orbit tracking-widest fixed top-0 left-0 right-0 z-50">
       <div
-        className={`flex bg-github justify-between items-center p-6 font-semibold shadow-lg ${
+        className={`flex bg-github justify-between items-center p-6 font-semibold shadow-lg border-b ${
           showMenu === "" && "md:flex-col"
         }`}
       >
         <div className="flex justify-between w-full items-center">
-          <h1 className="text-4xl tracking-widest">
-            <span className="text-cyan-400">B</span>.
-            <span className="text-pink-400">E</span>
-          </h1>
+          <Link to="/">
+            <h1 className="text-4xl tracking-widest hover:scale-125 transition ease-in-out delay-100 duration-500">
+              <span className="text-cyan-400 ">B</span>.
+              <span className="text-pink-400">E</span>
+            </h1>
+          </Link>
           <FaBars
             onClick={() => {
               showMenu === "md:hidden"
@@ -53,7 +54,7 @@ const Header = () => {
             return (
               <li
                 key={key}
-                className={`list-none mx-5 ${
+                className={`list-none mx-5 hover:scale-125 transition ease-in-out delay-100 duration-500 ${
                   key === pathname && "bg-white text-black rounded-md px-3"
                 }`}
               >
@@ -70,7 +71,7 @@ const Header = () => {
             return (
               <li
                 key={key}
-                className={`list-none p-2 ${
+                className={`list-none p-2 hover:scale-125 transition ease-in-out delay-100 duration-500 ${
                   key === pathname && "bg-white text-black rounded-md"
                 }`}
               >
